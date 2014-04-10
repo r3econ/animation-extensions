@@ -23,4 +23,11 @@
              repeat:(BOOL)repeat;
 
 
+- (void)spinWithDuration:(NSTimeInterval)duration rotations:(CGFloat)rotations repeat:(float)repeat;
+
+
+- (void)stopAnimation;
+
+- (BOOL)isBeingAnimated;
+
 @end

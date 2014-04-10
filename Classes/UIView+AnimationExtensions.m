@@ -44,10 +44,39 @@
     pulseAnimation.toValue = [NSNumber numberWithFloat:scale];
     pulseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pulseAnimation.autoreverses = YES;
-    pulseAnimation.repeatCount = repeat ? 0 : 1;
+    pulseAnimation.repeatCount = repeat ? HUGE_VALF : 0;
     
     [self.layer addAnimation:pulseAnimation
-                      forKey:nil];
+                      forKey:@"pulse"];
+}
+
+
+- (void)spinWithDuration:(NSTimeInterval)duration rotations:(CGFloat)rotations repeat:(float)repeat
+{
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 /* full rotation*/ * rotations * duration ];
+    rotationAnimation.duration = duration;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = repeat;
+    
+    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
+
+- (void)stopAnimation
+{
+    [CATransaction begin];
+    [self.layer removeAllAnimations];
+    [CATransaction commit];
+    
+    [CATransaction flush];
+}
+
+
+- (BOOL)isBeingAnimated
+{
+    return [self.layer.animationKeys count];
 }
 
 

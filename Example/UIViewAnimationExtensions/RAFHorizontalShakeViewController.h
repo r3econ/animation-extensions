@@ -1,5 +1,5 @@
 //
-//  RAFMasterViewController.m
+//  RAFDetailViewController.h
 //  UIViewAnimationExtensions
 //
 //  Created by Rafal Sroka on 10/04/14.
@@ -12,11 +12,9 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
+#import "RAFViewController.h"
 
-#import "RAFMasterViewController.h"
 
-
-@implementation RAFMasterViewController
-
+@interface RAFHorizontalShakeViewController : RAFViewController
 
 @end

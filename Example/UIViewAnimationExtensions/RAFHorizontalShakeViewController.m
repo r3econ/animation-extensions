@@ -1,5 +1,5 @@
 //
-//  RAFMasterViewController.m
+//  RAFDetailViewController.m
 //  UIViewAnimationExtensions
 //
 //  Created by Rafal Sroka on 10/04/14.
@@ -13,10 +13,22 @@
 //
 
 
-#import "RAFMasterViewController.h"
+#import "RAFHorizontalShakeViewController.h"
+
+@interface RAFHorizontalShakeViewController ()
+
+@property(nonatomic, weak) IBOutlet UIImageView *boxView;
+
+@end
 
 
-@implementation RAFMasterViewController
+@implementation RAFHorizontalShakeViewController
+
+
+- (IBAction)buttonTapped:(id)sender
+{
+    [_boxView shakeHorizontally];
+}
 
 
 @end

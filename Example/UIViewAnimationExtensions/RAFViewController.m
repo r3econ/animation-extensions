@@ -1,8 +1,8 @@
 //
-//  RAFDetailViewController.h
+//  RAFViewController.m
 //  UIViewAnimationExtensions
 //
-//  Created by Rafal Sroka on 10/04/14.
+//  Created by Rafal Sroka on 10.04.14.
 //
 //  License CC0.
 //  This is free and unencumbered software released into the public domain.
@@ -13,11 +13,22 @@
 //
 
 
-#import <UIKit/UIKit.h>
+#import "RAFViewController.h"
 
-@interface RAFDetailViewController : UIViewController
+@interface RAFViewController ()
 
-@property (strong, nonatomic) id detailItem;
+@end
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@implementation RAFViewController
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundTile"]];
+}
+
+
 @end

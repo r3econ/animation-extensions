@@ -1,8 +1,8 @@
 //
-//  RAFMasterViewController.m
+//  RAFViewController.h
 //  UIViewAnimationExtensions
 //
-//  Created by Rafal Sroka on 10/04/14.
+//  Created by Rafal Sroka on 10.04.14.
 //
 //  License CC0.
 //  This is free and unencumbered software released into the public domain.
@@ -13,10 +13,6 @@
 //
 
 
-#import "RAFMasterViewController.h"
-
-
-@implementation RAFMasterViewController
-
+@interface RAFViewController : UIViewController
 
 @end
