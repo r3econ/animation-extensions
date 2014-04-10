@@ -17,6 +17,18 @@
 }
 
 
+- (void)shakeVertically
+{
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.duration = 0.5;
+    animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0) ];
+    
+    [self.layer addAnimation:animation forKey:@"shake"];
+}
+
+
 - (void)applyMotionEffects
 {
     UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"

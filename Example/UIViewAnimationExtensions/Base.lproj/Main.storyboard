@@ -51,8 +51,29 @@
                                             <segue destination="Ah7-4n-0Wa" kind="push" id="K3s-cW-ruR"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qHC-Wv-rT9" style="IBUITableViewCellStyleDefault" id="uCV-en-Ytq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="C90-V9-fzK" style="IBUITableViewCellStyleDefault" id="rck-u5-TAC">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rck-u5-TAC" id="sUc-1O-Y8O">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Vertical shake" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C90-V9-fzK">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="yEz-9d-yf6" kind="push" id="Srh-CO-a7Z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qHC-Wv-rT9" style="IBUITableViewCellStyleDefault" id="uCV-en-Ytq">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uCV-en-Ytq" id="a3b-X6-cs1">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -73,7 +94,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="BIp-hp-xun" style="IBUITableViewCellStyleDefault" id="942-NS-NnA">
-                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="942-NS-NnA" id="YcO-D6-f8u">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -183,7 +204,7 @@
                             <constraint firstAttribute="centerY" secondItem="yju-Bp-icV" secondAttribute="centerY" id="C5n-8a-iHJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Horizontal shake" id="XcA-iN-6u3"/>
+                    <navigationItem key="navigationItem" title="Pulse" id="XcA-iN-6u3"/>
                     <connections>
                         <outlet property="boxView" destination="yju-Bp-icV" id="6yU-H2-NL3"/>
                     </connections>
@@ -191,6 +212,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b88-dQ-0cq" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="970" y="464"/>
+        </scene>
+        <!--Vertical Shake View Controller - Vertical Shake-->
+        <scene sceneID="lgg-x9-ZUa">
+            <objects>
+                <viewController title="Vertical Shake" id="yEz-9d-yf6" customClass="RAFVerticalShakeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LXP-9E-jXW"/>
+                        <viewControllerLayoutGuide type="bottom" id="pX9-8T-Hcd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ur-Wt-7Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2z-Hr-yt2">
+                                <rect key="frame" x="85" y="483" width="150" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="yEz-9d-yf6" eventType="touchUpInside" id="jQc-Al-BJm"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box" translatesAutoresizingMaskIntoConstraints="NO" id="VcZ-py-iz8">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pX9-8T-Hcd" firstAttribute="top" secondItem="C2z-Hr-yt2" secondAttribute="bottom" constant="39" id="BZA-7n-uXg"/>
+                            <constraint firstAttribute="centerY" secondItem="VcZ-py-iz8" secondAttribute="centerY" id="P49-ja-2YH"/>
+                            <constraint firstAttribute="centerX" secondItem="VcZ-py-iz8" secondAttribute="centerX" id="SkY-bM-Fas"/>
+                            <constraint firstAttribute="centerX" secondItem="C2z-Hr-yt2" secondAttribute="centerX" id="ZAs-Pr-xlw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Horizontal shake" id="IP1-hn-cHw"/>
+                    <connections>
+                        <outlet property="boxView" destination="VcZ-py-iz8" id="ZRG-3w-0bI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEB-Dy-S2f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="-237"/>
         </scene>
     </scenes>
     <resources>

@@ -5,6 +5,8 @@
  */
 - (void)shakeHorizontally;
 
+- (void)shakeVertically;
+
 
 /**
  @brief Adds a motion effect to the view. Similar effect can be seen in the 
