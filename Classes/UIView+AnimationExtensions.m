@@ -5,7 +5,7 @@
 @implementation UIView (UIView+AnimationExtensions)
 
 
-- (void)shake
+- (void)shakeHorizontally
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
     
@@ -19,11 +19,6 @@
 
 - (void)applyMotionEffects
 {
-    if (SYSTEM_VERSION_LESS_THAN(@"7.0"))
-    {
-        return;
-    }
-    
     UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
                                                                                                     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
     horizontalEffect.minimumRelativeValue = @(-kMotionEffectFactor);

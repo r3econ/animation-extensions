@@ -1,8 +1,17 @@
 @interface UIView (AnimationExtensions)
 
+/**
+ @brief Shakes the view horizontally for a short period of time.
+ */
+- (void)shakeHorizontally;
 
-- (void)shake;
+
+/**
+ @brief Adds a motion effect to the view. Similar effect can be seen in the 
+ background of the Home Screen on iOS 7.
+ */
 - (void)applyMotionEffects;
+
 
 /**
  @brief Performs a pulsing scale animation on a view.
