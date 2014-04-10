@@ -39,16 +39,18 @@
 }
 
 
-- (void)pulseToSize:(float)value duration:(float)duration
+- (void)pulseToSize:(CGFloat)scale duration:(NSTimeInterval)duration repeat:(BOOL)repeat
 {
     CABasicAnimation *pulseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    
     pulseAnimation.duration = duration;
     pulseAnimation.toValue = [NSNumber numberWithFloat:value];
     pulseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pulseAnimation.autoreverses = YES;
-    pulseAnimation.repeatCount = 1;
+    pulseAnimation.repeatCount = repeat ? 0 : 1;
     
-    [self.layer addAnimation:pulseAnimation forKey:nil];
+    [self.layer addAnimation:pulseAnimation
+                      forKey:nil];
 }
 
 

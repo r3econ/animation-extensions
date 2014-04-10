@@ -3,7 +3,15 @@
 
 - (void)shake;
 - (void)applyMotionEffects;
-- (void)pulseToSize:(float)value duration:(float)duration;
+
+/**
+ @brief Performs a pulsing scale animation on a view.
+ @param duration - duration of the animation
+ @param repeat - pass YES for the animation to repeat.
+ */
+- (void)pulseToSize:(CGFloat)scale
+           duration:(NSTimeInterval)duration
+             repeat:(BOOL)repeat;
 
 
 @end
