@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8604BBBB18F738E2008EC6FC /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 8604BBBA18F738E2008EC6FC /* Classes */; };
 		B58A384318F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
 		B58A384518F686BC00681E13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384418F686BC00681E13 /* CoreGraphics.framework */; };
 		B58A384718F686BC00681E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384618F686BC00681E13 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8604BBBA18F738E2008EC6FC /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = ../Classes; sourceTree = "<group>"; };
 		B58A383F18F686BC00681E13 /* UIViewAnimationExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimationExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A384218F686BC00681E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B58A384418F686BC00681E13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 		B58A383618F686BC00681E13 = {
 			isa = PBXGroup;
 			children = (
+				8604BBBA18F738E2008EC6FC /* Classes */,
 				B58A384818F686BC00681E13 /* UIViewAnimationExtensions */,
 				B58A386A18F686BC00681E13 /* UIViewAnimationExtensionsTests */,
 				B58A384118F686BC00681E13 /* Frameworks */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58A385E18F686BC00681E13 /* Images.xcassets in Resources */,
+				8604BBBB18F738E2008EC6FC /* Classes in Resources */,
 				B58A384D18F686BC00681E13 /* InfoPlist.strings in Resources */,
 				B58A385618F686BC00681E13 /* Main.storyboard in Resources */,
 			);
@@ -463,6 +467,7 @@
 				B58A387618F686BC00681E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B58A387718F686BC00681E13 /* Build configuration list for PBXNativeTarget "UIViewAnimationExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +476,7 @@
 				B58A387918F686BC00681E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
