@@ -2,7 +2,7 @@
 
 #define kMotionEffectFactor 10.0f
 
-@implementation UIView (UIView+AnimationExtensions)
+@implementation UIView (AnimationExtensions)
 
 
 - (void)shakeHorizontally
@@ -34,12 +34,14 @@
 }
 
 
-- (void)pulseToSize:(CGFloat)scale duration:(NSTimeInterval)duration repeat:(BOOL)repeat
+- (void)pulseToSize:(CGFloat)scale
+           duration:(NSTimeInterval)duration
+             repeat:(BOOL)repeat
 {
     CABasicAnimation *pulseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     
     pulseAnimation.duration = duration;
-    pulseAnimation.toValue = [NSNumber numberWithFloat:value];
+    pulseAnimation.toValue = [NSNumber numberWithFloat:scale];
     pulseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pulseAnimation.autoreverses = YES;
     pulseAnimation.repeatCount = repeat ? 0 : 1;

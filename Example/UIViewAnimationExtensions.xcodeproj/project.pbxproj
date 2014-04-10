@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8604BBBB18F738E2008EC6FC /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 8604BBBA18F738E2008EC6FC /* Classes */; };
+		8604BBBF18F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
+		8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
 		B58A384318F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
 		B58A384518F686BC00681E13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384418F686BC00681E13 /* CoreGraphics.framework */; };
 		B58A384718F686BC00681E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384618F686BC00681E13 /* UIKit.framework */; };
@@ -36,7 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8604BBBA18F738E2008EC6FC /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Classes; path = ../Classes; sourceTree = "<group>"; };
+		8604BBBD18F74325008EC6FC /* UIView+AnimationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationExtensions.h"; sourceTree = "<group>"; };
+		8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationExtensions.m"; sourceTree = "<group>"; };
 		B58A383F18F686BC00681E13 /* UIViewAnimationExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimationExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A384218F686BC00681E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B58A384418F686BC00681E13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8604BBBC18F74325008EC6FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8604BBBD18F74325008EC6FC /* UIView+AnimationExtensions.h */,
+				8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
 		B58A383618F686BC00681E13 = {
 			isa = PBXGroup;
 			children = (
-				8604BBBA18F738E2008EC6FC /* Classes */,
+				8604BBBC18F74325008EC6FC /* Classes */,
 				B58A384818F686BC00681E13 /* UIViewAnimationExtensions */,
 				B58A386A18F686BC00681E13 /* UIViewAnimationExtensionsTests */,
 				B58A384118F686BC00681E13 /* Frameworks */,
@@ -238,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58A385E18F686BC00681E13 /* Images.xcassets in Resources */,
-				8604BBBB18F738E2008EC6FC /* Classes in Resources */,
 				B58A384D18F686BC00681E13 /* InfoPlist.strings in Resources */,
 				B58A385618F686BC00681E13 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +273,7 @@
 				B58A385918F686BC00681E13 /* RAFMasterViewController.m in Sources */,
 				B58A385318F686BC00681E13 /* RAFAppDelegate.m in Sources */,
 				B58A384F18F686BC00681E13 /* main.m in Sources */,
+				8604BBBF18F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */,
 				B58A385C18F686BC00681E13 /* RAFDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58A387118F686BC00681E13 /* UIViewAnimationExtensionsTests.m in Sources */,
+				8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
