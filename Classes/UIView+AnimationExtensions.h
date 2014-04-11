@@ -27,6 +27,7 @@
 
 - (void)spinWithDuration:(NSTimeInterval)duration rotations:(CGFloat)rotations repeat:(float)repeat;
 
+- (void)rotate;
 
 - (void)stopAnimation;
 

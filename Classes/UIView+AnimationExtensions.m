@@ -76,6 +76,18 @@
 }
 
 
+- (void)rotate
+{
+    
+    CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = @(M_PI * 2.0);
+    rotationAnimation.duration = 1;
+    rotationAnimation.autoreverses = YES;
+    rotationAnimation.repeatCount = HUGE_VALF;
+    rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
 - (void)stopAnimation
 {
     [CATransaction begin];

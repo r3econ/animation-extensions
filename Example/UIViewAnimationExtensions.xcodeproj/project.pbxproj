@@ -9,12 +9,8 @@
 /* Begin PBXBuildFile section */
 		8604BBBF18F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
 		8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
-		8604BBC318F746B3008EC6FC /* RAFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBC218F746B3008EC6FC /* RAFViewController.m */; };
-		8604BBC418F746B3008EC6FC /* RAFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBC218F746B3008EC6FC /* RAFViewController.m */; };
-		8604BBCB18F74ACD008EC6FC /* RAFPulseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBCA18F74ACD008EC6FC /* RAFPulseViewController.m */; };
-		8604BBCC18F74ACD008EC6FC /* RAFPulseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBCA18F74ACD008EC6FC /* RAFPulseViewController.m */; };
-		86A3AAC418F74FE600509882 /* RAFVerticalShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AAC318F74FE600509882 /* RAFVerticalShakeViewController.m */; };
-		86A3AAC518F74FE600509882 /* RAFVerticalShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AAC318F74FE600509882 /* RAFVerticalShakeViewController.m */; };
+		86A3AACF18F87E6600509882 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AACE18F87E6600509882 /* RAFDetailViewController.m */; };
+		86A3AAD018F87E6600509882 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AACE18F87E6600509882 /* RAFDetailViewController.m */; };
 		B58A384318F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
 		B58A384518F686BC00681E13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384418F686BC00681E13 /* CoreGraphics.framework */; };
 		B58A384718F686BC00681E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384618F686BC00681E13 /* UIKit.framework */; };
@@ -23,7 +19,6 @@
 		B58A385318F686BC00681E13 /* RAFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A385218F686BC00681E13 /* RAFAppDelegate.m */; };
 		B58A385618F686BC00681E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58A385418F686BC00681E13 /* Main.storyboard */; };
 		B58A385918F686BC00681E13 /* RAFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A385818F686BC00681E13 /* RAFMasterViewController.m */; };
-		B58A385C18F686BC00681E13 /* RAFHorizontalShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A385B18F686BC00681E13 /* RAFHorizontalShakeViewController.m */; };
 		B58A385E18F686BC00681E13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58A385D18F686BC00681E13 /* Images.xcassets */; };
 		B58A386518F686BC00681E13 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A386418F686BC00681E13 /* XCTest.framework */; };
 		B58A386618F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
@@ -45,12 +40,8 @@
 /* Begin PBXFileReference section */
 		8604BBBD18F74325008EC6FC /* UIView+AnimationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationExtensions.h"; sourceTree = "<group>"; };
 		8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AnimationExtensions.m"; sourceTree = "<group>"; };
-		8604BBC118F746B3008EC6FC /* RAFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFViewController.h; sourceTree = "<group>"; };
-		8604BBC218F746B3008EC6FC /* RAFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFViewController.m; sourceTree = "<group>"; };
-		8604BBC918F74ACD008EC6FC /* RAFPulseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFPulseViewController.h; sourceTree = "<group>"; };
-		8604BBCA18F74ACD008EC6FC /* RAFPulseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFPulseViewController.m; sourceTree = "<group>"; };
-		86A3AAC218F74FE600509882 /* RAFVerticalShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFVerticalShakeViewController.h; sourceTree = "<group>"; };
-		86A3AAC318F74FE600509882 /* RAFVerticalShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFVerticalShakeViewController.m; sourceTree = "<group>"; };
+		86A3AACD18F87E6600509882 /* RAFDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFDetailViewController.h; sourceTree = "<group>"; };
+		86A3AACE18F87E6600509882 /* RAFDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFDetailViewController.m; sourceTree = "<group>"; };
 		B58A383F18F686BC00681E13 /* UIViewAnimationExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewAnimationExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A384218F686BC00681E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B58A384418F686BC00681E13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +55,6 @@
 		B58A385518F686BC00681E13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B58A385718F686BC00681E13 /* RAFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFMasterViewController.h; sourceTree = "<group>"; };
 		B58A385818F686BC00681E13 /* RAFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFMasterViewController.m; sourceTree = "<group>"; };
-		B58A385A18F686BC00681E13 /* RAFHorizontalShakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFHorizontalShakeViewController.h; sourceTree = "<group>"; };
-		B58A385B18F686BC00681E13 /* RAFHorizontalShakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFHorizontalShakeViewController.m; sourceTree = "<group>"; };
 		B58A385D18F686BC00681E13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B58A386318F686BC00681E13 /* UIViewAnimationExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewAnimationExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A386418F686BC00681E13 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -108,22 +97,11 @@
 			path = ../Classes;
 			sourceTree = "<group>";
 		};
-		8604BBC518F74A85008EC6FC /* Horizontal Shake */ = {
-			isa = PBXGroup;
-			children = (
-				B58A385A18F686BC00681E13 /* RAFHorizontalShakeViewController.h */,
-				B58A385B18F686BC00681E13 /* RAFHorizontalShakeViewController.m */,
-			);
-			name = "Horizontal Shake";
-			sourceTree = "<group>";
-		};
 		8604BBC618F74A93008EC6FC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				B58A385718F686BC00681E13 /* RAFMasterViewController.h */,
-				B58A385818F686BC00681E13 /* RAFMasterViewController.m */,
-				8604BBC118F746B3008EC6FC /* RAFViewController.h */,
-				8604BBC218F746B3008EC6FC /* RAFViewController.m */,
+				86A3AAD218F8848F00509882 /* Detail */,
+				86A3AAD118F8847B00509882 /* Master */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -137,22 +115,22 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
-		8604BBC818F74AB2008EC6FC /* Pulse */ = {
+		86A3AAD118F8847B00509882 /* Master */ = {
 			isa = PBXGroup;
 			children = (
-				8604BBC918F74ACD008EC6FC /* RAFPulseViewController.h */,
-				8604BBCA18F74ACD008EC6FC /* RAFPulseViewController.m */,
+				B58A385718F686BC00681E13 /* RAFMasterViewController.h */,
+				B58A385818F686BC00681E13 /* RAFMasterViewController.m */,
 			);
-			name = Pulse;
+			name = Master;
 			sourceTree = "<group>";
 		};
-		86A3AAC618F7504D00509882 /* Vertical Shake */ = {
+		86A3AAD218F8848F00509882 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				86A3AAC218F74FE600509882 /* RAFVerticalShakeViewController.h */,
-				86A3AAC318F74FE600509882 /* RAFVerticalShakeViewController.m */,
+				86A3AACD18F87E6600509882 /* RAFDetailViewController.h */,
+				86A3AACE18F87E6600509882 /* RAFDetailViewController.m */,
 			);
-			name = "Vertical Shake";
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		B58A383618F686BC00681E13 = {
@@ -189,11 +167,8 @@
 		B58A384818F686BC00681E13 /* UIViewAnimationExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				86A3AAC618F7504D00509882 /* Vertical Shake */,
-				8604BBC818F74AB2008EC6FC /* Pulse */,
 				8604BBC718F74AA2008EC6FC /* Delegate */,
 				8604BBC618F74A93008EC6FC /* Navigation */,
-				8604BBC518F74A85008EC6FC /* Horizontal Shake */,
 				B58A385418F686BC00681E13 /* Main.storyboard */,
 				B58A385D18F686BC00681E13 /* Images.xcassets */,
 				B58A384918F686BC00681E13 /* Supporting Files */,
@@ -329,13 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58A385918F686BC00681E13 /* RAFMasterViewController.m in Sources */,
+				86A3AACF18F87E6600509882 /* RAFDetailViewController.m in Sources */,
 				B58A385318F686BC00681E13 /* RAFAppDelegate.m in Sources */,
-				8604BBC318F746B3008EC6FC /* RAFViewController.m in Sources */,
-				86A3AAC418F74FE600509882 /* RAFVerticalShakeViewController.m in Sources */,
 				B58A384F18F686BC00681E13 /* main.m in Sources */,
 				8604BBBF18F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */,
-				B58A385C18F686BC00681E13 /* RAFHorizontalShakeViewController.m in Sources */,
-				8604BBCB18F74ACD008EC6FC /* RAFPulseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +317,7 @@
 			files = (
 				B58A387118F686BC00681E13 /* UIViewAnimationExtensionsTests.m in Sources */,
 				8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */,
-				8604BBC418F746B3008EC6FC /* RAFViewController.m in Sources */,
-				8604BBCC18F74ACD008EC6FC /* RAFPulseViewController.m in Sources */,
-				86A3AAC518F74FE600509882 /* RAFVerticalShakeViewController.m in Sources */,
+				86A3AAD018F87E6600509882 /* RAFDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

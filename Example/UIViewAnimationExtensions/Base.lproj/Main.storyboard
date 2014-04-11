@@ -47,9 +47,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Ah7-4n-0Wa" kind="push" id="K3s-cW-ruR"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="C90-V9-fzK" style="IBUITableViewCellStyleDefault" id="rck-u5-TAC">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
@@ -68,9 +65,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="yEz-9d-yf6" kind="push" id="Srh-CO-a7Z"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qHC-Wv-rT9" style="IBUITableViewCellStyleDefault" id="uCV-en-Ytq">
                                         <rect key="frame" x="0.0" y="152" width="320" height="44"/>
@@ -89,9 +83,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="ryR-Vu-BQO" kind="push" id="wG3-eU-ahx"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="BIp-hp-xun" style="IBUITableViewCellStyleDefault" id="942-NS-NnA">
                                         <rect key="frame" x="0.0" y="196" width="320" height="44"/>
@@ -101,6 +92,42 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Motion effects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BIp-hp-xun">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="VPI-8r-6Ti" style="IBUITableViewCellStyleDefault" id="XU5-iN-bb7">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XU5-iN-bb7" id="lW6-6b-vcT">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Rotate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VPI-8r-6Ti">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Eg6-cZ-Oad" style="IBUITableViewCellStyleDefault" id="Efh-4B-YRo">
+                                        <rect key="frame" x="0.0" y="284" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Efh-4B-YRo" id="a3Q-6b-fgq">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Spin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eg6-cZ-Oad">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -169,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="970" y="-237"/>
         </scene>
-        <!--Pulse View Controller - Pulse-->
+        <!--Detail View Controller - Pulse-->
         <scene sceneID="oBQ-Jj-ITu">
             <objects>
-                <viewController title="Pulse" id="ryR-Vu-BQO" customClass="RAFPulseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RAFDetailViewController" title="Pulse" id="ryR-Vu-BQO" customClass="RAFDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zV8-ee-6B3"/>
                         <viewControllerLayoutGuide type="bottom" id="iYv-eg-Mag"/>
@@ -204,7 +231,7 @@
                             <constraint firstAttribute="centerY" secondItem="yju-Bp-icV" secondAttribute="centerY" id="C5n-8a-iHJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pulse" id="XcA-iN-6u3"/>
+                    <navigationItem key="navigationItem" id="XcA-iN-6u3"/>
                     <connections>
                         <outlet property="boxView" destination="yju-Bp-icV" id="6yU-H2-NL3"/>
                     </connections>
