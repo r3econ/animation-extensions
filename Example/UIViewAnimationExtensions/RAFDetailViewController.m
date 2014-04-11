@@ -29,7 +29,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundTile"]];
-    self.title = [self titleString];
+    
+    [self configureNavigationBar];
 }
 
 
@@ -101,17 +102,30 @@
 #pragma mark - Appearance
 
 
-- (NSString *)titleString
+- (void)configureNavigationBar
 {
     switch (_mode)
     {
-        case RAFDetailViewControllerMode_ShakeHorizontal: return @"Horizontal shake";
-        case RAFDetailViewControllerMode_ShakeVertical: return @"Vertical shake";
-        case RAFDetailViewControllerMode_MotionEffects: return @"Motion effects";
-        case RAFDetailViewControllerMode_Pulse: return @"Pulse";
-        case RAFDetailViewControllerMode_Rotate: return @"Rotate";
-        case RAFDetailViewControllerMode_Spin: return @"Spin";
-        default: return nil;
+        case RAFDetailViewControllerMode_ShakeHorizontal:
+            self.title = @"Horizontal shake";
+            break;
+        case RAFDetailViewControllerMode_ShakeVertical:
+            self.title = @"Vertical shake";
+            break;
+        case RAFDetailViewControllerMode_MotionEffects:
+            self.title = @"Motion effects";
+            self.navigationItem.prompt = @"Tilt the device to see the effect";
+            break;
+        case RAFDetailViewControllerMode_Pulse:
+            self.title = @"Pulse";
+            break;
+        case RAFDetailViewControllerMode_Rotate:
+            self.title = @"Rotate";
+            break;
+        case RAFDetailViewControllerMode_Spin:
+            self.title = @"Spin";
+            break;
+        default: break;
     }
 }
 
