@@ -77,14 +77,19 @@
         }
         case RAFDetailViewControllerMode_Spin:
         {
-            [_boxView spinWithDuration:1.0f
-                             rotations:2
-                                repeat:1];
+            [_boxView flipWithDuration:0.3f
+                             direction:UIViewAnimationFlipDirectionFromLeft
+                           repeatCount:2
+                           autoreverse:NO];
             break;
         }
         case RAFDetailViewControllerMode_Rotate:
         {
-            [_boxView rotate];
+            [_boxView rotateToAngle:M_PI * 2.0f
+                           duration:1.0f
+                          direction:UIViewAnimationRotationDirectionLeft
+                        repeatCount:HUGE_VALF
+                        autoreverse:YES];
             break;
         }
         default:

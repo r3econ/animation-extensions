@@ -1,6 +1,5 @@
 #import "UIView+AnimationExtensions.h"
 
-#define kMotionEffectFactor 10.0f
 
 @implementation UIView (AnimationExtensions)
 
@@ -33,12 +32,12 @@
 {
     UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
                                                                                                     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    horizontalEffect.minimumRelativeValue = @(-kMotionEffectFactor);
-    horizontalEffect.maximumRelativeValue = @( kMotionEffectFactor);
+    horizontalEffect.minimumRelativeValue = @(-10.0f);
+    horizontalEffect.maximumRelativeValue = @( 10.0f);
     UIInterpolatingMotionEffect *verticalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
                                                                                                   type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    verticalEffect.minimumRelativeValue = @(-kMotionEffectFactor);
-    verticalEffect.maximumRelativeValue = @( kMotionEffectFactor);
+    verticalEffect.minimumRelativeValue = @(-10.0f);
+    verticalEffect.maximumRelativeValue = @( 10.0f);
     UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
     motionEffectGroup.motionEffects = @[horizontalEffect, verticalEffect];
     
@@ -63,30 +62,63 @@
 }
 
 
-- (void)spinWithDuration:(NSTimeInterval)duration rotations:(CGFloat)rotations repeat:(float)repeat
+- (void)flipWithDuration:(NSTimeInterval)duration
+               direction:(UIViewAnimationFlipDirection)direction
+             repeatCount:(NSUInteger)repeatCount
+             autoreverse:(BOOL)shouldAutoreverse
 {
-    CABasicAnimation* rotationAnimation;
-    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 /* full rotation*/ * rotations * duration ];
-    rotationAnimation.duration = duration;
-    rotationAnimation.cumulative = YES;
-    rotationAnimation.repeatCount = repeat;
+    NSString *subtype = nil;
     
-    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    switch (direction)
+    {
+        case UIViewAnimationFlipDirectionFromTop:
+            subtype = @"fromTop";
+            break;
+        case UIViewAnimationFlipDirectionFromLeft:
+            subtype = @"fromLeft";
+            break;
+        case UIViewAnimationFlipDirectionFromBottom:
+            subtype = @"fromBottom";
+            break;
+        case UIViewAnimationFlipDirectionFromRight:
+        default:
+            subtype = @"fromRight";
+            break;
+    }
+    
+    CATransition *transition = [CATransition animation];
+    
+    transition.startProgress = 0;
+    transition.endProgress = 1.0;
+    transition.type = @"flip";
+    transition.subtype = subtype;
+    transition.duration = duration;
+    transition.repeatCount = repeatCount;
+    transition.autoreverses = shouldAutoreverse;
+    
+    [self.layer addAnimation:transition
+                      forKey:@"spin"];
 }
 
 
-- (void)rotate
+- (void)rotateToAngle:(CGFloat)angle
+             duration:(NSTimeInterval)duration
+            direction:(UIViewAnimationRotationDirection)direction
+          repeatCount:(NSUInteger)repeatCount
+          autoreverse:(BOOL)shouldAutoreverse;
 {
-    
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotationAnimation.toValue = @(M_PI * 2.0);
-    rotationAnimation.duration = 1;
-    rotationAnimation.autoreverses = YES;
-    rotationAnimation.repeatCount = HUGE_VALF;
+    
+    rotationAnimation.toValue = @(direction == UIViewAnimationRotationDirectionRight ? angle : -angle);
+    rotationAnimation.duration = duration;
+    rotationAnimation.autoreverses = shouldAutoreverse;
+    rotationAnimation.repeatCount = repeatCount;
     rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    
+    [self.layer addAnimation:rotationAnimation
+                      forKey:@"transform.rotation.z"];
 }
+
 
 - (void)stopAnimation
 {

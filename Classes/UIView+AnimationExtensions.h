@@ -1,3 +1,20 @@
+
+typedef NS_ENUM(NSUInteger, UIViewAnimationFlipDirection)
+{
+    UIViewAnimationFlipDirectionFromTop,
+    UIViewAnimationFlipDirectionFromLeft,
+    UIViewAnimationFlipDirectionFromRight,
+    UIViewAnimationFlipDirectionFromBottom,
+};
+
+
+typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
+{
+    UIViewAnimationRotationDirectionRight,
+    UIViewAnimationRotationDirectionLeft
+};
+
+
 @interface UIView (AnimationExtensions)
 
 /**
@@ -5,6 +22,10 @@
  */
 - (void)shakeHorizontally;
 
+
+/**
+ @brief Shakes the view vertically for a short period of time.
+ */
 - (void)shakeVertically;
 
 
@@ -25,12 +46,44 @@
              repeat:(BOOL)repeat;
 
 
-- (void)spinWithDuration:(NSTimeInterval)duration rotations:(CGFloat)rotations repeat:(float)repeat;
+/**
+ @brief Performs a 3D-like flip animation of the view around center X or Y axis.
+ @param duration - total time of the animation.
+ @param direction - direction of the flip movement.
+ @param repeatCount - number of repetitions of the animation. Pass HUGE_VALF to repeat forever.
+ @param shouldAutoreverse - pass YES to make the animation reverse when it reaches the end.
+ */
+- (void)flipWithDuration:(NSTimeInterval)duration
+               direction:(UIViewAnimationFlipDirection)direction
+             repeatCount:(NSUInteger)repeatCount
+             autoreverse:(BOOL)shouldAutoreverse;
 
-- (void)rotate;
 
+/**
+ @brief Performs a rotation animation of the view around its anchor point.
+ @param angle - end angle of the rotation. Pass M_PI * 2.0 for full circle rotation.
+ @param duration - total time of the animation.
+ @param direction - left or right direction of the rotation.
+ @param repeatCount - number of repetitions of the animation. Pass HUGE_VALF to repeat forever.
+ @param shouldAutoreverse - pass YES to make the animation reverse when it reaches the end.
+ */
+- (void)rotateToAngle:(CGFloat)angle
+             duration:(NSTimeInterval)duration
+            direction:(UIViewAnimationRotationDirection)direction
+          repeatCount:(NSUInteger)repeatCount
+          autoreverse:(BOOL)shouldAutoreverse;
+
+
+/**
+ @brief Stops current animations.
+ */
 - (void)stopAnimation;
 
+
+/**
+ @brief Checks if the view is being animated.
+ */
 - (BOOL)isBeingAnimated;
+
 
 @end
