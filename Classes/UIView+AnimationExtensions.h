@@ -1,4 +1,18 @@
+//
+//  Created by Rafal Sroka
+//
+//  License CC0.
+//  This is free and unencumbered software released into the public domain.
+//
+//  Anyone is free to copy, modify, publish, use, compile, sell, or
+//  distribute this software, either in source code form or as a compiled
+//  binary, for any purpose, commercial or non-commercial, and by any means.
+//
 
+
+/**
+ @brief Direction of flip animation.
+ */
 typedef NS_ENUM(NSUInteger, UIViewAnimationFlipDirection)
 {
     UIViewAnimationFlipDirectionFromTop,
@@ -8,6 +22,9 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationFlipDirection)
 };
 
 
+/**
+ @brief Direction of rotation animation.
+ */
 typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
 {
     UIViewAnimationRotationDirectionRight,
@@ -32,6 +49,8 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
 /**
  @brief Adds a motion effect to the view. Similar effect can be seen in the 
  background of the Home Screen on iOS 7.
+ @note Motion effects are available starting from iOS 7. Calling this method on 
+ older iOS will be ignored.
  */
 - (void)applyMotionEffects;
 

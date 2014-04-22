@@ -12,9 +12,10 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
+
 #import "RAFDetailViewController.h"
 
-@interface RAFDetailViewController ()
+@interface RAFDetailViewController()
 
 @property(nonatomic, weak) IBOutlet UIImageView *boxView;
 
