@@ -30,18 +30,23 @@
 
 - (void)applyMotionEffects
 {
-    UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
-                                                                                                    type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    horizontalEffect.minimumRelativeValue = @(-10.0f);
-    horizontalEffect.maximumRelativeValue = @( 10.0f);
-    UIInterpolatingMotionEffect *verticalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
-                                                                                                  type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    verticalEffect.minimumRelativeValue = @(-10.0f);
-    verticalEffect.maximumRelativeValue = @( 10.0f);
-    UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
-    motionEffectGroup.motionEffects = @[horizontalEffect, verticalEffect];
-    
-    [self addMotionEffect:motionEffectGroup];
+    // Motion effects are available starting from iOS 7.
+    if (([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending))
+    {
+        
+        UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
+                                                                                                        type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        horizontalEffect.minimumRelativeValue = @(-10.0f);
+        horizontalEffect.maximumRelativeValue = @( 10.0f);
+        UIInterpolatingMotionEffect *verticalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
+                                                                                                      type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        verticalEffect.minimumRelativeValue = @(-10.0f);
+        verticalEffect.maximumRelativeValue = @( 10.0f);
+        UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
+        motionEffectGroup.motionEffects = @[horizontalEffect, verticalEffect];
+        
+        [self addMotionEffect:motionEffectGroup];
+    }
 }
 
 
