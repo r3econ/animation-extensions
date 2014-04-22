@@ -22,7 +22,7 @@ typedef NS_ENUM(NSUInteger, RAFDetailViewControllerMode)
     RAFDetailViewControllerMode_Pulse,
     RAFDetailViewControllerMode_MotionEffects,
     RAFDetailViewControllerMode_Rotate,
-    RAFDetailViewControllerMode_Spin,
+    RAFDetailViewControllerMode_Flip,
 };
 
 

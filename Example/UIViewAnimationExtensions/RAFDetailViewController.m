@@ -77,7 +77,7 @@
                            repeat:YES];
             break;
         }
-        case RAFDetailViewControllerMode_Spin:
+        case RAFDetailViewControllerMode_Flip:
         {
             [_boxView flipWithDuration:0.3f
                              direction:UIViewAnimationFlipDirectionFromLeft
@@ -123,8 +123,8 @@
         case RAFDetailViewControllerMode_Rotate:
             self.title = @"Rotate";
             break;
-        case RAFDetailViewControllerMode_Spin:
-            self.title = @"Spin";
+        case RAFDetailViewControllerMode_Flip:
+            self.title = @"Flip";
             break;
         default: break;
     }
