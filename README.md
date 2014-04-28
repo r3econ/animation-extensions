@@ -7,11 +7,23 @@ It is designed to be **as easy to use as possible to integrate and use** to spee
 Furthermore, the category comes along with **a small demo project** where you can see the animations in action. Current version of the category includes following animations:
 
  - Rotation
+
+![Rotation](https://dl.dropboxusercontent.com/u/7121070/github/UIView-Animation-Extensions/rotate.gif)
+
  - Flip
- - Horizontal Shake
- - Vertical Shake
- - Motion Effects
+
+![Flip](https://dl.dropboxusercontent.com/u/7121070/github/UIView-Animation-Extensions/flip.gif)
+
+ - Horizontal and Vertical Shake
+
+![Shake](https://dl.dropboxusercontent.com/u/7121070/github/UIView-Animation-Extensions/horizontal_shake.gif)
+
  - Pulse
+
+![Pulse](https://dl.dropboxusercontent.com/u/7121070/github/UIView-Animation-Extensions/pulse.gif)
+
+ - Motion Effects (Unfortunately this cannot be shown using an animated GIF.)
+
 
 ##Full Documentation with Animated GIFs 
 
