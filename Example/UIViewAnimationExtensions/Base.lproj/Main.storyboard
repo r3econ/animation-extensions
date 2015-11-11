@@ -173,55 +173,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
-        <!--Horizontal Shake-->
-        <scene sceneID="Cn3-H9-jdl">
-            <objects>
-                <viewController title="Horizontal Shake" id="Ah7-4n-0Wa" customClass="RAFHorizontalShakeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
-                        <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MMQ-IT-qOo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7N-wc-TyC">
-                                <rect key="frame" x="85" y="483" width="150" height="46"/>
-                                <animations/>
-                                <state key="normal" image="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="Ah7-4n-0Wa" eventType="touchUpInside" id="y66-j6-IXE"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box" translatesAutoresizingMaskIntoConstraints="NO" id="LLx-y8-LCV">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
-                                <animations/>
-                            </imageView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="a0L-h9-sNL" firstAttribute="top" secondItem="m7N-wc-TyC" secondAttribute="bottom" constant="39" id="3vL-BO-vpx"/>
-                            <constraint firstAttribute="centerX" secondItem="LLx-y8-LCV" secondAttribute="centerX" id="8B7-ZH-oBH"/>
-                            <constraint firstAttribute="centerY" secondItem="LLx-y8-LCV" secondAttribute="centerY" id="X7x-DU-ukz"/>
-                            <constraint firstAttribute="centerX" secondItem="m7N-wc-TyC" secondAttribute="centerX" id="ob2-cC-FOC"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Horizontal shake" id="cra-N8-TIN"/>
-                    <connections>
-                        <outlet property="boxView" destination="LLx-y8-LCV" id="vef-rx-Do1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="970" y="-237"/>
-        </scene>
-        <!--Pulse-->
+        <!--Detail-->
         <scene sceneID="oBQ-Jj-ITu">
             <objects>
-                <viewController storyboardIdentifier="RAFDetailViewController" title="Pulse" id="ryR-Vu-BQO" customClass="RAFDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RAFDetailViewController" title="Detail" id="ryR-Vu-BQO" customClass="RAFDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zV8-ee-6B3"/>
                         <viewControllerLayoutGuide type="bottom" id="iYv-eg-Mag"/>
@@ -261,52 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b88-dQ-0cq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="464"/>
-        </scene>
-        <!--Vertical Shake-->
-        <scene sceneID="lgg-x9-ZUa">
-            <objects>
-                <viewController title="Vertical Shake" id="yEz-9d-yf6" customClass="RAFVerticalShakeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LXP-9E-jXW"/>
-                        <viewControllerLayoutGuide type="bottom" id="pX9-8T-Hcd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Ur-Wt-7Qp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2z-Hr-yt2">
-                                <rect key="frame" x="85" y="483" width="150" height="46"/>
-                                <animations/>
-                                <state key="normal" image="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="yEz-9d-yf6" eventType="touchUpInside" id="jQc-Al-BJm"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box" translatesAutoresizingMaskIntoConstraints="NO" id="VcZ-py-iz8">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
-                                <animations/>
-                            </imageView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="pX9-8T-Hcd" firstAttribute="top" secondItem="C2z-Hr-yt2" secondAttribute="bottom" constant="39" id="BZA-7n-uXg"/>
-                            <constraint firstAttribute="centerY" secondItem="VcZ-py-iz8" secondAttribute="centerY" id="P49-ja-2YH"/>
-                            <constraint firstAttribute="centerX" secondItem="VcZ-py-iz8" secondAttribute="centerX" id="SkY-bM-Fas"/>
-                            <constraint firstAttribute="centerX" secondItem="C2z-Hr-yt2" secondAttribute="centerX" id="ZAs-Pr-xlw"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Horizontal shake" id="IP1-hn-cHw"/>
-                    <connections>
-                        <outlet property="boxView" destination="VcZ-py-iz8" id="ZRG-3w-0bI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nEB-Dy-S2f" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1381" y="-237"/>
+            <point key="canvasLocation" x="909" y="64"/>
         </scene>
     </scenes>
     <resources>
