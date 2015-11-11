@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIView+AnimationExtensions"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UIView Animation Extensions is a useful category on UIView containing a set of most commonly used animations."
 
   s.description  = <<-DESC
@@ -25,11 +25,11 @@ Furthermore, the category comes along with **a small demo project** where you ca
   s.license      = "CC0"
 
   s.author             = { "Rafal Sroka" => "rafal.sroka.it@gmail.com" }
-  s.social_media_url   = "http://twitter.com/r3econ"
+  s.social_media_url   = "http://twitter.com/srokaraf"
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/r3econ/UIView-Animation-Extensions.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/r3econ/UIView-Animation-Extensions.git", :tag => "1.0.1" }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
