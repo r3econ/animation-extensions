@@ -21,8 +21,8 @@
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
     
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    animation.duration = 0.5;
-    animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0) ];
+    animation.duration = 0.5f;
+    animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0)];
     
     [self.layer addAnimation:animation forKey:@"shake"];
 }
@@ -33,8 +33,8 @@
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
     
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    animation.duration = 0.5;
-    animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0) ];
+    animation.duration = 0.5f;
+    animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0)];
     
     [self.layer addAnimation:animation forKey:@"shake"];
 }
@@ -43,7 +43,8 @@
 - (void)applyMotionEffects
 {
     // Motion effects are available starting from iOS 7.
-    if (([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending))
+    if (([[[UIDevice currentDevice] systemVersion] compare:@"7.0"
+                                                   options:NSNumericSearch] != NSOrderedAscending))
     {
         
         UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
@@ -105,8 +106,8 @@
     
     CATransition *transition = [CATransition animation];
     
-    transition.startProgress = 0;
-    transition.endProgress = 1.0;
+    transition.startProgress = 0.0f;
+    transition.endProgress = 1.0f;
     transition.type = @"flip";
     transition.subtype = subtype;
     transition.duration = duration;
