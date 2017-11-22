@@ -9,15 +9,11 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-
 #import "UIView+AnimationExtensions.h"
-
 
 @implementation UIView (AnimationExtensions)
 
-
-- (void)shakeHorizontally
-{
+- (void)shakeHorizontally {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
     
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
@@ -27,9 +23,7 @@
     [self.layer addAnimation:animation forKey:@"shake"];
 }
 
-
-- (void)shakeVertically
-{
+- (void)shakeVertically {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
     
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
@@ -39,20 +33,19 @@
     [self.layer addAnimation:animation forKey:@"shake"];
 }
 
-
-- (void)applyMotionEffects
-{
+- (void)applyMotionEffects {
     // Motion effects are available starting from iOS 7.
     if (([[[UIDevice currentDevice] systemVersion] compare:@"7.0"
-                                                   options:NSNumericSearch] != NSOrderedAscending))
-    {
+                                                   options:NSNumericSearch] != NSOrderedAscending)) {
         
-        UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x"
-                                                                                                        type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc]
+                                                         initWithKeyPath:@"center.x"
+                                                         type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
         horizontalEffect.minimumRelativeValue = @(-10.0f);
         horizontalEffect.maximumRelativeValue = @( 10.0f);
-        UIInterpolatingMotionEffect *verticalEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.y"
-                                                                                                      type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        UIInterpolatingMotionEffect *verticalEffect = [[UIInterpolatingMotionEffect alloc]
+                                                       initWithKeyPath:@"center.y"
+                                                       type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
         verticalEffect.minimumRelativeValue = @(-10.0f);
         verticalEffect.maximumRelativeValue = @( 10.0f);
         UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
@@ -62,11 +55,9 @@
     }
 }
 
-
 - (void)pulseToSize:(CGFloat)scale
            duration:(NSTimeInterval)duration
-             repeat:(BOOL)repeat
-{
+             repeat:(BOOL)repeat {
     CABasicAnimation *pulseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     
     pulseAnimation.duration = duration;
@@ -79,16 +70,13 @@
                       forKey:@"pulse"];
 }
 
-
 - (void)flipWithDuration:(NSTimeInterval)duration
                direction:(UIViewAnimationFlipDirection)direction
              repeatCount:(NSUInteger)repeatCount
-             autoreverse:(BOOL)shouldAutoreverse
-{
+             autoreverse:(BOOL)shouldAutoreverse {
     NSString *subtype = nil;
     
-    switch (direction)
-    {
+    switch (direction) {
         case UIViewAnimationFlipDirectionFromTop:
             subtype = @"fromTop";
             break;
@@ -118,13 +106,11 @@
                       forKey:@"spin"];
 }
 
-
 - (void)rotateToAngle:(CGFloat)angle
              duration:(NSTimeInterval)duration
             direction:(UIViewAnimationRotationDirection)direction
           repeatCount:(NSUInteger)repeatCount
-          autoreverse:(BOOL)shouldAutoreverse;
-{
+          autoreverse:(BOOL)shouldAutoreverse {
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     
     rotationAnimation.toValue = @(direction == UIViewAnimationRotationDirectionRight ? angle : -angle);
@@ -137,21 +123,15 @@
                       forKey:@"transform.rotation.z"];
 }
 
-
-- (void)stopAnimation
-{
+- (void)stopAnimation {
     [CATransaction begin];
     [self.layer removeAllAnimations];
     [CATransaction commit];
-    
     [CATransaction flush];
 }
 
-
-- (BOOL)isBeingAnimated
-{
+- (BOOL)isBeingAnimated {
     return [self.layer.animationKeys count];
 }
-
 
 @end

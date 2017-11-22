@@ -12,7 +12,6 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-
 #import "RAFDetailViewController.h"
 
 @interface RAFDetailViewController()
@@ -21,12 +20,9 @@
 
 @end
 
-
 @implementation RAFDetailViewController
 
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BackgroundTile"]];
@@ -34,59 +30,46 @@
     [self configureNavigationBar];
 }
 
-
 #pragma mark - Actions
 
-
-- (IBAction)buttonTapped:(id)sender
-{
-    if ([_boxView isBeingAnimated])
-    {
+- (IBAction)buttonTapped:(id)sender {
+    if ([_boxView isBeingAnimated]) {
         [_boxView stopAnimation];
     }
-    else
-    {
+    else {
         [self startAnimation];
     }
 }
 
 
-- (void)startAnimation
-{
-    switch (_mode)
-    {
-        case RAFDetailViewControllerMode_ShakeHorizontal:
-        {
+- (void)startAnimation {
+    switch (_mode) {
+        case RAFDetailViewControllerMode_ShakeHorizontal: {
             [_boxView shakeHorizontally];
             break;
         }
-        case RAFDetailViewControllerMode_ShakeVertical:
-        {
+        case RAFDetailViewControllerMode_ShakeVertical: {
             [_boxView shakeVertically];
             break;
         }
-        case RAFDetailViewControllerMode_MotionEffects:
-        {
+        case RAFDetailViewControllerMode_MotionEffects: {
             [_boxView applyMotionEffects];
             break;
         }
-        case RAFDetailViewControllerMode_Pulse:
-        {
+        case RAFDetailViewControllerMode_Pulse: {
             [_boxView pulseToSize:1.1f
                          duration:0.3f
                            repeat:YES];
             break;
         }
-        case RAFDetailViewControllerMode_Flip:
-        {
+        case RAFDetailViewControllerMode_Flip: {
             [_boxView flipWithDuration:0.3f
                              direction:UIViewAnimationFlipDirectionFromLeft
                            repeatCount:2
                            autoreverse:NO];
             break;
         }
-        case RAFDetailViewControllerMode_Rotate:
-        {
+        case RAFDetailViewControllerMode_Rotate: {
             [_boxView rotateToAngle:M_PI * 2.0f
                            duration:1.0f
                           direction:UIViewAnimationRotationDirectionLeft
@@ -99,14 +82,10 @@
     }
 }
 
-
 #pragma mark - Appearance
 
-
-- (void)configureNavigationBar
-{
-    switch (_mode)
-    {
+- (void)configureNavigationBar {
+    switch (_mode) {
         case RAFDetailViewControllerMode_ShakeHorizontal:
             self.title = @"Horizontal shake";
             break;
@@ -129,7 +108,5 @@
         default: break;
     }
 }
-
-
 
 @end

@@ -14,9 +14,7 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-
-typedef NS_ENUM(NSUInteger, RAFDetailViewControllerMode)
-{
+typedef NS_ENUM(NSUInteger, RAFDetailViewControllerMode) {
     RAFDetailViewControllerMode_ShakeHorizontal,
     RAFDetailViewControllerMode_ShakeVertical,
     RAFDetailViewControllerMode_Pulse,
@@ -24,7 +22,6 @@ typedef NS_ENUM(NSUInteger, RAFDetailViewControllerMode)
     RAFDetailViewControllerMode_Rotate,
     RAFDetailViewControllerMode_Flip,
 };
-
 
 @interface RAFDetailViewController : UIViewController
 

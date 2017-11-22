@@ -9,28 +9,23 @@
 //  binary, for any purpose, commercial or non-commercial, and by any means.
 //
 
-
 /**
  @brief Direction of flip animation.
  */
-typedef NS_ENUM(NSUInteger, UIViewAnimationFlipDirection)
-{
+typedef NS_ENUM(NSUInteger, UIViewAnimationFlipDirection) {
     UIViewAnimationFlipDirectionFromTop,
     UIViewAnimationFlipDirectionFromLeft,
     UIViewAnimationFlipDirectionFromRight,
     UIViewAnimationFlipDirectionFromBottom,
 };
 
-
 /**
  @brief Direction of rotation animation.
  */
-typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
-{
+typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection) {
     UIViewAnimationRotationDirectionRight,
     UIViewAnimationRotationDirectionLeft
 };
-
 
 @interface UIView (AnimationExtensions)
 
@@ -39,12 +34,10 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
  */
 - (void)shakeHorizontally;
 
-
 /**
  @brief Shakes the view vertically for a short period of time.
  */
 - (void)shakeVertically;
-
 
 /**
  @brief Adds a motion effect to the view. Similar effect can be seen in the 
@@ -54,7 +47,6 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
  */
 - (void)applyMotionEffects;
 
-
 /**
  @brief Performs a pulsing scale animation on a view.
  @param duration - duration of the animation
@@ -63,7 +55,6 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
 - (void)pulseToSize:(CGFloat)scale
            duration:(NSTimeInterval)duration
              repeat:(BOOL)repeat;
-
 
 /**
  @brief Performs a 3D-like flip animation of the view around center X or Y axis.
@@ -76,7 +67,6 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
                direction:(UIViewAnimationFlipDirection)direction
              repeatCount:(NSUInteger)repeatCount
              autoreverse:(BOOL)shouldAutoreverse;
-
 
 /**
  @brief Performs a rotation animation of the view around its anchor point.
@@ -92,17 +82,14 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection)
           repeatCount:(NSUInteger)repeatCount
           autoreverse:(BOOL)shouldAutoreverse;
 
-
 /**
  @brief Stops current animations.
  */
 - (void)stopAnimation;
 
-
 /**
  @brief Checks if the view is being animated.
  */
 - (BOOL)isBeingAnimated;
-
 
 @end
