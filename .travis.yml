@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: UIViewAnimationExtensions.xcodeproj
+xcode_scheme: UIViewAnimationExtensions
+osx_image: xcode9
