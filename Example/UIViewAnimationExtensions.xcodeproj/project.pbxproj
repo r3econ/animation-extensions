@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8604BBBF18F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
-		8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8604BBBE18F74325008EC6FC /* UIView+AnimationExtensions.m */; };
 		86A3AACF18F87E6600509882 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AACE18F87E6600509882 /* RAFDetailViewController.m */; };
-		86A3AAD018F87E6600509882 /* RAFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A3AACE18F87E6600509882 /* RAFDetailViewController.m */; };
 		B58A384318F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
 		B58A384518F686BC00681E13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384418F686BC00681E13 /* CoreGraphics.framework */; };
 		B58A384718F686BC00681E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384618F686BC00681E13 /* UIKit.framework */; };
@@ -20,22 +18,7 @@
 		B58A385618F686BC00681E13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58A385418F686BC00681E13 /* Main.storyboard */; };
 		B58A385918F686BC00681E13 /* RAFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A385818F686BC00681E13 /* RAFMasterViewController.m */; };
 		B58A385E18F686BC00681E13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58A385D18F686BC00681E13 /* Images.xcassets */; };
-		B58A386518F686BC00681E13 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A386418F686BC00681E13 /* XCTest.framework */; };
-		B58A386618F686BC00681E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384218F686BC00681E13 /* Foundation.framework */; };
-		B58A386718F686BC00681E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58A384618F686BC00681E13 /* UIKit.framework */; };
-		B58A386F18F686BC00681E13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B58A386D18F686BC00681E13 /* InfoPlist.strings */; };
-		B58A387118F686BC00681E13 /* UIViewAnimationExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58A387018F686BC00681E13 /* UIViewAnimationExtensionsTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B58A386818F686BC00681E13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B58A383718F686BC00681E13 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B58A383E18F686BC00681E13;
-			remoteInfo = UIViewAnimationExtensions;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8604BBBD18F74325008EC6FC /* UIView+AnimationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AnimationExtensions.h"; sourceTree = "<group>"; };
@@ -56,11 +39,7 @@
 		B58A385718F686BC00681E13 /* RAFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAFMasterViewController.h; sourceTree = "<group>"; };
 		B58A385818F686BC00681E13 /* RAFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAFMasterViewController.m; sourceTree = "<group>"; };
 		B58A385D18F686BC00681E13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B58A386318F686BC00681E13 /* UIViewAnimationExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewAnimationExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A386418F686BC00681E13 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B58A386C18F686BC00681E13 /* UIViewAnimationExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIViewAnimationExtensionsTests-Info.plist"; sourceTree = "<group>"; };
-		B58A386E18F686BC00681E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B58A387018F686BC00681E13 /* UIViewAnimationExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewAnimationExtensionsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,16 +50,6 @@
 				B58A384518F686BC00681E13 /* CoreGraphics.framework in Frameworks */,
 				B58A384718F686BC00681E13 /* UIKit.framework in Frameworks */,
 				B58A384318F686BC00681E13 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B58A386018F686BC00681E13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B58A386518F686BC00681E13 /* XCTest.framework in Frameworks */,
-				B58A386718F686BC00681E13 /* UIKit.framework in Frameworks */,
-				B58A386618F686BC00681E13 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +107,6 @@
 			children = (
 				8604BBBC18F74325008EC6FC /* Classes */,
 				B58A384818F686BC00681E13 /* UIViewAnimationExtensions */,
-				B58A386A18F686BC00681E13 /* UIViewAnimationExtensionsTests */,
 				B58A384118F686BC00681E13 /* Frameworks */,
 				B58A384018F686BC00681E13 /* Products */,
 			);
@@ -148,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				B58A383F18F686BC00681E13 /* UIViewAnimationExtensions.app */,
-				B58A386318F686BC00681E13 /* UIViewAnimationExtensionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,24 +154,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B58A386A18F686BC00681E13 /* UIViewAnimationExtensionsTests */ = {
-			isa = PBXGroup;
-			children = (
-				B58A387018F686BC00681E13 /* UIViewAnimationExtensionsTests.m */,
-				B58A386B18F686BC00681E13 /* Supporting Files */,
-			);
-			path = UIViewAnimationExtensionsTests;
-			sourceTree = "<group>";
-		};
-		B58A386B18F686BC00681E13 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B58A386C18F686BC00681E13 /* UIViewAnimationExtensionsTests-Info.plist */,
-				B58A386D18F686BC00681E13 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,24 +174,6 @@
 			productReference = B58A383F18F686BC00681E13 /* UIViewAnimationExtensions.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B58A386218F686BC00681E13 /* UIViewAnimationExtensionsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B58A387718F686BC00681E13 /* Build configuration list for PBXNativeTarget "UIViewAnimationExtensionsTests" */;
-			buildPhases = (
-				B58A385F18F686BC00681E13 /* Sources */,
-				B58A386018F686BC00681E13 /* Frameworks */,
-				B58A386118F686BC00681E13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B58A386918F686BC00681E13 /* PBXTargetDependency */,
-			);
-			name = UIViewAnimationExtensionsTests;
-			productName = UIViewAnimationExtensionsTests;
-			productReference = B58A386318F686BC00681E13 /* UIViewAnimationExtensionsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,11 +183,6 @@
 				CLASSPREFIX = RAF;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Rafal Sroka";
-				TargetAttributes = {
-					B58A386218F686BC00681E13 = {
-						TestTargetID = B58A383E18F686BC00681E13;
-					};
-				};
 			};
 			buildConfigurationList = B58A383A18F686BC00681E13 /* Build configuration list for PBXProject "UIViewAnimationExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -272,7 +198,6 @@
 			projectRoot = "";
 			targets = (
 				B58A383E18F686BC00681E13 /* UIViewAnimationExtensions */,
-				B58A386218F686BC00681E13 /* UIViewAnimationExtensionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,14 +210,6 @@
 				B58A385E18F686BC00681E13 /* Images.xcassets in Resources */,
 				B58A384D18F686BC00681E13 /* InfoPlist.strings in Resources */,
 				B58A385618F686BC00681E13 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B58A386118F686BC00681E13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B58A386F18F686BC00681E13 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,25 +228,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B58A385F18F686BC00681E13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B58A387118F686BC00681E13 /* UIViewAnimationExtensionsTests.m in Sources */,
-				8604BBC018F74325008EC6FC /* UIView+AnimationExtensions.m in Sources */,
-				86A3AAD018F87E6600509882 /* RAFDetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B58A386918F686BC00681E13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B58A383E18F686BC00681E13 /* UIViewAnimationExtensions */;
-			targetProxy = B58A386818F686BC00681E13 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B58A384B18F686BC00681E13 /* InfoPlist.strings */ = {
@@ -346,14 +245,6 @@
 				B58A385518F686BC00681E13 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B58A386D18F686BC00681E13 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B58A386E18F686BC00681E13 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,48 +373,6 @@
 			};
 			name = Release;
 		};
-		B58A387818F686BC00681E13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIViewAnimationExtensions.app/UIViewAnimationExtensions";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIViewAnimationExtensions/UIViewAnimationExtensions-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "UIViewAnimationExtensionsTests/UIViewAnimationExtensionsTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		B58A387918F686BC00681E13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UIViewAnimationExtensions.app/UIViewAnimationExtensions";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UIViewAnimationExtensions/UIViewAnimationExtensions-Prefix.pch";
-				INFOPLIST_FILE = "UIViewAnimationExtensionsTests/UIViewAnimationExtensionsTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,15 +390,6 @@
 			buildConfigurations = (
 				B58A387518F686BC00681E13 /* Debug */,
 				B58A387618F686BC00681E13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B58A387718F686BC00681E13 /* Build configuration list for PBXNativeTarget "UIViewAnimationExtensionsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B58A387818F686BC00681E13 /* Debug */,
-				B58A387918F686BC00681E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
