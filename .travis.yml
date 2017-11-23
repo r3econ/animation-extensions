@@ -1,4 +1,4 @@
 language: objective-c
-xcode_project: UIViewAnimationExtensions.xcodeproj
-xcode_scheme: UIViewAnimationExtensions
 osx_image: xcode9
+script:
+    - xcodebuild clean build -sdk iphonesimulator -project UIViewAnimationExtensions.xcodeproj -scheme UIViewAnimationExtensions CODE_SIGNING_REQUIRED=NO
