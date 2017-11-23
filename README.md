@@ -1,7 +1,12 @@
 [![Build Status](https://travis-ci.org/r3econ/UIView-Animation-Extensions.svg?branch=master)](https://travis-ci.org/r3econ/UIView-Animation-Extensions)
 [![License](https://img.shields.io/badge/license-CC0-brightgreen.svg)](https://img.shields.io/badge/license-CC0-brightgreen.svg)
+![Platform](https://img.shields.io/badge/platform-ios%20%7C%20tvos-lightgrey.svg)
 
-![Logo](https://i.imgur.com/Z6lcz7d.png)
+
+
+<p align="center">
+<img src="https://i.imgur.com/Z6lcz7d.png">
+</p>
 
 A **useful** `UIView` category containing a set of most commonly used animations like rotation, flip, shake and others.
 
@@ -19,4 +24,4 @@ Furthermore, the category comes along with **a small demo project** where you ca
 
 ## Thread Safety
 
-UIView Animation Extensions is a category on UIView and - as with all UIKit components - it should only be accessed from the main thread.
+UIView Animation Extensions is a category on `UIView` and - as with all `UIKit` components - it should only be accessed from the main thread.
