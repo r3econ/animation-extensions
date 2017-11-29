@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/r3econ/UIView-Animation-Extensions.svg?branch=master)](https://travis-ci.org/r3econ/UIView-Animation-Extensions)
+[![Build Status](https://travis-ci.org/r3econ/animation-extensions.svg?branch=master)](https://travis-ci.org/r3econ/animation-extensions)
 [![License](https://img.shields.io/badge/license-CC0-brightgreen.svg)](https://img.shields.io/badge/license-CC0-brightgreen.svg)
 ![Platform](https://img.shields.io/badge/platform-ios%20%7C%20tvos-lightgrey.svg)
 
