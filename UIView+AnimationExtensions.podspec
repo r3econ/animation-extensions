@@ -71,7 +71,7 @@ UIView Animation Extensions is a category on `UIView` and - as with all `UIKit` 
 
   s.license      = "CC0"
 
-  s.author             = { "Rafał Sroka" => "r4fal@gmail.com" }
+  s.author             = { "Rafał Sroka" => "r4ffal@gmail.com" }
   s.social_media_url   = "https://twitter.com/r3econ"
 
   s.platform     = :ios, "11.0"
