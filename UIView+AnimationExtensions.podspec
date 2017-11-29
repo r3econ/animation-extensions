@@ -76,7 +76,7 @@ UIView Animation Extensions is a category on `UIView` and - as with all `UIKit` 
 
   s.platform     = :ios, "11.0"
 
-  s.source       = { :git => "https://github.com/r3econ/animation-extensions", :tag => "2.0.0" }
+  s.source       = { :git => "https://github.com/r3econ/animation-extensions.git", :tag => "v2.0.0" }
 
   s.source_files  = "Classes", "Classes/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
