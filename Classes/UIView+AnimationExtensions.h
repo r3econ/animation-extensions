@@ -40,9 +40,9 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection) {
 - (void)shakeVertically;
 
 /**
- @brief Adds a motion effect to the view. Similar effect can be seen in the 
+ @brief Adds a motion effect to the view. Similar effect can be seen in the
  background of the Home Screen on iOS 7.
- @note Motion effects are available starting from iOS 7. Calling this method on 
+ @note Motion effects are available starting from iOS 7. Calling this method on
  older iOS will be ignored.
  */
 - (void)applyMotionEffects;

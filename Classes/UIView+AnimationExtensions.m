@@ -15,21 +15,21 @@
 
 - (void)shakeHorizontally {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
-    
+
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.duration = 0.5f;
     animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0)];
-    
+
     [self.layer addAnimation:animation forKey:@"shake"];
 }
 
 - (void)shakeVertically {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.y"];
-    
+
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.duration = 0.5f;
     animation.values = @[@(-12), @(12), @(-8), @(8), @(-4), @(4), @(0)];
-    
+
     [self.layer addAnimation:animation forKey:@"shake"];
 }
 
@@ -37,7 +37,7 @@
     // Motion effects are available starting from iOS 7.
     if (([[[UIDevice currentDevice] systemVersion] compare:@"7.0"
                                                    options:NSNumericSearch] != NSOrderedAscending)) {
-        
+
         UIInterpolatingMotionEffect *horizontalEffect = [[UIInterpolatingMotionEffect alloc]
                                                          initWithKeyPath:@"center.x"
                                                          type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
@@ -50,7 +50,7 @@
         verticalEffect.maximumRelativeValue = @( 10.0f);
         UIMotionEffectGroup *motionEffectGroup = [[UIMotionEffectGroup alloc] init];
         motionEffectGroup.motionEffects = @[horizontalEffect, verticalEffect];
-        
+
         [self addMotionEffect:motionEffectGroup];
     }
 }
@@ -59,13 +59,13 @@
            duration:(NSTimeInterval)duration
              repeat:(BOOL)repeat {
     CABasicAnimation *pulseAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    
+
     pulseAnimation.duration = duration;
     pulseAnimation.toValue = [NSNumber numberWithFloat:scale];
     pulseAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     pulseAnimation.autoreverses = YES;
     pulseAnimation.repeatCount = repeat ? HUGE_VALF : 0;
-    
+
     [self.layer addAnimation:pulseAnimation
                       forKey:@"pulse"];
 }
@@ -75,7 +75,7 @@
              repeatCount:(NSUInteger)repeatCount
              autoreverse:(BOOL)shouldAutoreverse {
     NSString *subtype = nil;
-    
+
     switch (direction) {
         case UIViewAnimationFlipDirectionFromTop:
             subtype = @"fromTop";
@@ -91,9 +91,9 @@
             subtype = @"fromRight";
             break;
     }
-    
+
     CATransition *transition = [CATransition animation];
-    
+
     transition.startProgress = 0.0f;
     transition.endProgress = 1.0f;
     transition.type = @"flip";
@@ -101,7 +101,7 @@
     transition.duration = duration;
     transition.repeatCount = repeatCount;
     transition.autoreverses = shouldAutoreverse;
-    
+
     [self.layer addAnimation:transition
                       forKey:@"spin"];
 }
@@ -112,13 +112,13 @@
           repeatCount:(NSUInteger)repeatCount
           autoreverse:(BOOL)shouldAutoreverse {
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    
+
     rotationAnimation.toValue = @(direction == UIViewAnimationRotationDirectionRight ? angle : -angle);
     rotationAnimation.duration = duration;
     rotationAnimation.autoreverses = shouldAutoreverse;
     rotationAnimation.repeatCount = repeatCount;
     rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    
+
     [self.layer addAnimation:rotationAnimation
                       forKey:@"transform.rotation.z"];
 }

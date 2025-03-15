@@ -24,9 +24,9 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
                                                          bundle:nil];
     RAFDetailViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"RAFDetailViewController"];
-    
+
     vc.mode = (RAFDetailViewControllerMode)indexPath.row;
-    
+
     [self.navigationController pushViewController:vc
                                          animated:YES];
 }
